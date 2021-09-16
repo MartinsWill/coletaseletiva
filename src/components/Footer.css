@@ -1,0 +1,52 @@
+footer {
+  background: #191622;
+}
+footer.section {
+  padding: 4rem 0;
+  margin-top: 8rem;
+  position: relative;
+  width: 100%;
+}
+footer.logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.text-style {
+  color: #fff;
+  font-size: 36px;
+}
+a {
+  text-decoration: none;
+}
+p,
+span {
+  margin-left: 2rem;
+}
+.p-style {
+  color: #fff;
+}
+@media screen and (min-width: 1920px) {
+  footer.section {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer.section {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  footer.section {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
