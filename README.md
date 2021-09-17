@@ -19,4 +19,4 @@ O *Frontend* do projeto foi feito em **_ReactJS_** e o *Backend* foi utilizado o
 ## TRATAMENTO DE ERROS ❌❓
 
 6. Durante o comando : **_yarn start_**, aparecer algum erro, execute o seguinte comando : **_yarn add react-scripts --save._**
-7.Esse comando irá instalar as dependencias restantes do projeto.
+7. Esse comando irá instalar as dependencias restantes do projeto.
