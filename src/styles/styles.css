@@ -40,3 +40,13 @@ button:hover {
   background: #1b1616;
   transition: ease-in-out 0.2s;
 }
+.btn {
+  height: 2rem;
+  width: 3rem;
+  background: rgb(0, 0, 0);
+  align-items: center;
+}
+.btn:hover {
+  background: #1b1616;
+  transition: ease-in-out 0.2s;
+}

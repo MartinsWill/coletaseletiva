@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import "../components/Navbar.css";
 import * as FaIcons from "react-icons/fa";
 import Swal from "sweetalert2";
+import { useHistory } from "react-router-dom";
 
 function Consultar() {
   const [dadosColetas, setDadosColetas] = useState({});
+  const history = useHistory();
 
   useEffect(() => {
     const coletaRef = database.ref("pontosdeColetas/");
@@ -44,9 +46,10 @@ function Consultar() {
       <table className="table">
         <thead>
           <tr>
-            <td className="td-style"> Nome do ponto de Coleta</td>
+            <td className="td-style"> Ponto de Coleta</td>
             <td className="td-style"> Endereço</td>
-            <td className="td-style"> Ação</td>
+            <td className="td-style"> Editar</td>
+            <td className="td-style"> Deletar</td>
           </tr>
         </thead>
         <tbody>
@@ -55,6 +58,11 @@ function Consultar() {
               <tr>
                 <td>{dadosColetas[id].nPontoColeta}</td>
                 <td>{dadosColetas[id].endereco}</td>
+                <td>
+                  <a onClick={() => history.push(`/Edit/${id}`)}>
+                    <FaIcons.FaPen />
+                  </a>
+                </td>
                 <td>
                   <a onClick={() => deleteColeta(id)}>
                     <FaIcons.FaTrashAlt />
